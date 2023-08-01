@@ -5,7 +5,7 @@ app.use(cors())
 //body parser
 app.use(express.json())
 app.use(urlencoded({ extended: true }))
-app.get('/', (req: Request, res: Any) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
 })
 
